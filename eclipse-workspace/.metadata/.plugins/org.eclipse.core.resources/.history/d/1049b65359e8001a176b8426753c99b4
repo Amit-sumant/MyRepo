@@ -1,0 +1,19 @@
+package stepDefination;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+
+public class LoginStepDefination 
+{
+	WebDriver driver;
+	
+	@Given("^user is on Login Page$")
+	public void user_is_on_login()
+	{
+		System.setProperty("webdriver.chrome.driver", "");
+		driver = new ChromeDriver();
+	}
+	
+}

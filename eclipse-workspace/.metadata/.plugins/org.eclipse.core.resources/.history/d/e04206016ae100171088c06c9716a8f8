@@ -1,0 +1,27 @@
+package com.aruba.action;
+
+import java.awt.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class ArubaProject {
+	
+	public static void Register() // here login page and after click on Registration
+	{
+		DriveArubaFunction.getFunction();
+		DriveArubaFunction.driver.get("http://newtours.demoaut.com/");
+		
+		WebElement regis = DriveArubaFunction.driver.findElement(ArubaLoginObject.regis);
+		regis.click();
+	}
+	
+	public static void getAllLink()
+	{
+		java.util.List<WebElement> allLink = DriveArubaFunction.driver.findElements(By.xpath("//a"));
+		int cnt = allLink.size();
+		System.out.println("All total count is =" + cnt);
+	}
+	
+
+}

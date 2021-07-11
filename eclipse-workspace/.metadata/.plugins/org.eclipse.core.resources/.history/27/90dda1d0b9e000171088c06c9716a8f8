@@ -1,0 +1,10 @@
+package com.aruba.action;
+
+public class ArubaProject {
+	public void setup()
+	{
+		DriveArubaFunction.getFunction();
+		DriveArubaFunction.driver.get("http://newtours.demoaut.com/");
+	}
+
+}

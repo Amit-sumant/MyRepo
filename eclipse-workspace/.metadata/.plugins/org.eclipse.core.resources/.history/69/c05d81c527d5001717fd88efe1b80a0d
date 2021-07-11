@@ -1,0 +1,53 @@
+package com.sample.action;
+import java.util.List;
+
+import org.apache.xerces.impl.dv.dtd.DTDDVFactoryImpl;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AmazonSpeaker {
+
+	public static void searchSpeaker(String itemspeaker) //enter text into search text box and enter
+	{
+		WebElement srch = DriverFactory.driver.findElement(AmazonLoginobjectRepository.srch);
+		srch.sendKeys(itemspeaker);
+		srch.submit();
+	}
+	
+	public static void getAllSpeaker() // count total number of links
+	{
+		List<WebElement> allSpeaker = DriverFactory.driver.findElements(By.xpath("//h2"));
+		int cnt = allSpeaker.size();
+		System.out.println("Total count of links are =" + cnt);
+	}
+	
+	public static void clickonLink(int searchNo)  //click on speaker link 
+	{
+		WebElement link1 = DriverFactory.driver.findElements(By.xpath("//a/h2")).get(searchNo-4);
+		link1.click();
+	}
+	
+	public static void clickOnAddToCart()
+	{
+		//below code scroll down the page
+		JavascriptExecutor jse = (JavascriptExecutor)DriverFactory.driver;
+		jse.executeScript("window.scrollBy(0,1000)", "");
+		
+		WebElement addKart = DriverFactory.driver.findElement(By.xpath("//input[name='submit.addToCart']"));
+		addKart.click();
+	}
+	
+	public static void clickOnCheckOut()
+	{
+		WebElement chkout = DriverFactory.driver.findElement(AmazonLoginobjectRepository.chkout);
+		chkout.click();
+	}
+	
+	public void createNewAcc()
+	{
+		
+	}
+
+}

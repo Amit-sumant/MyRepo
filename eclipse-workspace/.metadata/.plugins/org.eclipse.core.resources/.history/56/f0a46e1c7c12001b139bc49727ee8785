@@ -1,0 +1,58 @@
+package javaBasic;
+
+public class ArrayConcept 
+{
+
+	public static void main(String[] args) 
+	{
+		//Array
+		//lowest bound / index is = 0
+		//upper bound / index is = n-1 (n is size of an array)
+		
+		//this is how declare an array
+		int i[] =new int[5];
+		//int j[] = {1,2,3,4,5}; //we can initialize a single array like this also
+		
+		i[0] = 10;
+		i[1] = 100;
+		i[2] = 500;
+		i[3] = 77;
+		i[4] = 88;
+		
+		System.out.println("Array of this value is:" + i[2]);
+		
+		//Note: If given out of Array value or size does not match then error will be "ArrayOutofBoundException" appear.
+
+		System.out.println(i.length); //this gives length of array
+		
+		//if print all the value of array
+		int j;
+		for(j=0;j<i.length;j++)
+		{
+			System.out.println(i[j]);
+		}
+		
+		System.out.println("***************************************************");
+		
+		//Double array
+		double b[] = new double[5];
+		b[0] = 10.33;
+		b[1] = 15.38;
+		b[2] = 47.851;
+		b[3] = 100.00;
+		b[4] = 11.11;
+		
+		System.out.println(b[3]);
+		
+		//Object Array. This is used initiate different data types in one array only
+		Object ob[] =new Object[6];
+		ob[0] = 100;
+		ob[1] = "Arnav is Pillu";
+		ob[2] = 10.20;
+		ob[3] = 's';
+		
+		System.out.println(ob[1]);
+				
+	}
+
+}

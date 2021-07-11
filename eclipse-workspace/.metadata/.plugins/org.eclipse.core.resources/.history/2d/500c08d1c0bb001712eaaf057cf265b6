@@ -1,0 +1,85 @@
+package Test;
+import java.awt.Desktop.Action;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.MouseEvent;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.*;
+
+public class MySelenium {
+
+	public static void main(String[] args)throws Exception {
+if(true) {
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
+		//System.setProperty("webdriver..driver", "C:\\IEDriverServer.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				//WebDriver mriver = new InternetExplorerDriver();
+		//WebDriver mdriver=new FirefoxDriver();
+		
+		//idriver.get("https://www.youtube.com");
+		//driver.get("https://www.facebook.com/");
+		driver.get("https://www.google.com");
+		driver.manage().window().maximize();
+		
+		WebElement element = driver.findElement(By.name("q")); //this is for find element in google text
+		element.sendKeys("Selenium"); // this is sending keyword which user want
+		element.submit();
+		
+		
+		WebElement downloadSeleniulink = driver.findElement(By.linkText("Downloads - Selenium"));
+		downloadSeleniulink.click();
+		//driver.get("http://www.seleniumhq.org/download/");
+		
+		WebElement latestReleaseLink = driver.findElement(By.linkText("2.48.0"));
+		latestReleaseLink.click();
+		
+	//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		//driver.get("http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz");
+		
+		driver.navigate().back();
+		
+		latestReleaseLink = driver.findElement(By.linkText("Selenium (software) - Wikipedia"));
+		latestReleaseLink.click();
+		
+		//driver.get("https://en.wikipedia.org/wiki/Selenium_(software)");
+		
+		//WebElement element = driver.findElement(By.name("email"));
+		//element.sendKeys("amit.sumant@gmail.com");
+		
+		
+		//WebElement element2 = driver.findElement(By.name("pass"));
+		//element2.sendKeys("SriramsamarthAmit712");
+		
+		//element.submit();
+			//driver.findElement(By.xpath("//input[@value='Log In']")).click();
+		String entirpageText = driver.getPageSource();
+		String[] seleniumParts = entirpageText.split("Selenium");
+		System.out.println(seleniumParts.length);
+//		for(String part : seleniumParts) {
+//			
+//			//System.out.println(part);
+//		}
+}	
+		Robot robot = new Robot();
+		robot.mouseMove(1338, 694);
+		int button = InputEvent.BUTTON1_DOWN_MASK;
+		robot.mousePress(button);
+		robot.mouseRelease(button);
+}
+}

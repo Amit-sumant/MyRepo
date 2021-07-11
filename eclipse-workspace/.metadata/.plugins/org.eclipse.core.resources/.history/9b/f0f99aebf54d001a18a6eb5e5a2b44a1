@@ -1,0 +1,26 @@
+package collectionOfJava;
+
+import java.util.LinkedList;
+
+public class LinkedListConsept {
+
+	public static void main(String[] args) 
+	{
+		LinkedList<String> ll=new LinkedList<String>();
+		ll.add("Test");
+		ll.add("Selenium");
+		ll.add("Java");
+		
+		System.out.println(ll);
+		
+		ll.addFirst("Amit");
+		ll.addLast("Clear");
+		
+		System.out.println(ll);
+		
+		//get
+		System.out.println(ll.get(0));
+
+	}
+
+}

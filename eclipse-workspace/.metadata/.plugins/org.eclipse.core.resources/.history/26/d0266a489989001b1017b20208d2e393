@@ -1,0 +1,15 @@
+package javaInterviewCoding;
+
+public class SwapNumbers {
+
+	public static void main(String[] args) 
+	{
+		int a=100;
+		int b=500;
+		int tmp;
+		
+		System.out.println("Before swap of a is ->" + a + "" + "Before swap of b is ->" + b);
+
+	}
+
+}

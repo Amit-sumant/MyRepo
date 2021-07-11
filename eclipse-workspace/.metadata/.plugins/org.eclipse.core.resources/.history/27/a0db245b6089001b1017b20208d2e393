@@ -1,0 +1,21 @@
+package javaInterviewCoding;
+
+import java.io.Reader;
+import java.util.Scanner;
+
+import javax.print.DocFlavor.READER;
+
+public class PrintInteger {
+
+	public static void main(String[] args) {
+		// enter a string given by user
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter your Integer value");
+		
+		
+
+	}
+
+}

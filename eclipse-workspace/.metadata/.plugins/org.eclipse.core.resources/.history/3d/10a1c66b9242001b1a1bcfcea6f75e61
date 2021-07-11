@@ -1,0 +1,72 @@
+package javaBasic;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+public class HashMapConcept {
+
+	public static void main(String[] args) 
+	{
+		//Hashmap is a class which implement Map interface
+		//extends abstractMap
+		//it contains only unique elements
+		//Hashmap stores the value on basis of - Key - Value pair
+		//it may have one null key allow and multiple null values
+		//it maintain no order and non synchronized
+		
+		HashMap<Integer, String> hm=new HashMap<Integer, String>();
+		hm.put(1, "Amit");
+		hm.put(2, "Job");
+		hm.put(3, "change");
+		hm.put(4, "early");
+		
+		System.out.println("hm value passing is: " + hm.get(1));
+		System.out.println("hm value passing is: " + hm.get(5)); //it is not displaying an error based on index available. So its give Null value
+		
+		for(Entry m: hm.entrySet())
+		{
+			System.out.println(m.getKey() + " " + m.getValue());
+		}
+		
+		System.out.println("*****************using Iterator***************");
+		
+		Iterator<Integer> itr=hm.keySet().iterator();
+		while(itr.hasNext())
+		{
+			Integer i=itr.next(); //it collect element from collection sequentially
+			System.out.println(i + " " + hm.get(i));
+		}
+		
+		System.out.println("***************Compare Hash Map********************");
+		
+		
+		HashMap<Integer, String> hm1=new HashMap<Integer, String>();
+		hm1.put(1, "Amit");
+		hm1.put(2, "Job");
+		hm1.put(3, "change");
+		hm1.put(4, "early");
+		
+		HashMap<Integer, String> hm2=new HashMap<Integer, String>();
+		hm2.put(4, "early");
+		hm2.put(1, "Amit");
+		hm2.put(3, "change");
+		hm2.put(2, "Job");
+		
+		HashMap<Integer, String> hm3=new HashMap<Integer, String>();
+		hm3.put(4, "early");
+		hm3.put(3, "change");
+		hm3.put(2, "Job");
+		hm3.put(1, "Amit");
+		hm3.put(5, "Yes");
+		
+		//Compare on the basis of Key - Value => for this use equals method
+		System.out.println(hm1.equals(hm2));
+		System.out.println(hm1.equals(hm3));
+		
+		//compare hashmap for the same key => use Keyset()method use
+		System.out.println(hm1.keySet().equals(hm2.keySet().equals(hm3.keySet().equals(null))));
+
+	}
+
+}

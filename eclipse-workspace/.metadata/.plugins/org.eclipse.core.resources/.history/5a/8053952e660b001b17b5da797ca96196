@@ -1,0 +1,26 @@
+package javaBasic;
+
+import java.util.Scanner;
+
+public class NormalPracticeCode
+{	
+	String fname="Issac";
+	
+	int age;
+	
+	
+	NormalPracticeCode()
+	{
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		/*“FName=Isaac|LName=Newton|Address=UK|Age= |School=Trinity|Invention=LawsOfMotion”
+				Read above as a string and write the program using collection framework classes to print values as mentioned below. Do no use replace method of String.
+				Output: FName : Issac , LName : Newton , Address : UK And so on….*/
+		
+			
+	}
+
+}

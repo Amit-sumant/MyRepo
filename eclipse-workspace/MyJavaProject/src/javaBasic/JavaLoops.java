@@ -1,0 +1,33 @@
+package javaBasic;
+
+import java.util.Scanner;
+
+public class JavaLoops 
+{
+
+	public static void main(String[] args) 
+	{
+
+		int i=1;
+		
+		/*Scanner scn = new Scanner(System.in);
+		System.out.println("Enter of Your Value I:");
+		int i = scn.nextInt();*/
+		
+		while (i<10)
+		{
+			System.out.println(i);
+			//i=i+1;
+			i++;
+		}
+		
+		System.out.println("***********next************");
+		//for loop
+		
+		for (i=10;i>=-10;i--) //initialization / Conditional and Increamental
+		{
+			System.out.println("Value of this loop is:" + i);
+		}
+	}
+
+}

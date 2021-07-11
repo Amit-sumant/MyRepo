@@ -1,0 +1,11 @@
+package oopsConcept;
+
+public class FunctionsJava {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello");
+
+	}
+
+}

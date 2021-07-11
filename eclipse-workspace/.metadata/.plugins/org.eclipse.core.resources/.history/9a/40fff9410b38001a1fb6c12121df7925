@@ -1,0 +1,15 @@
+package javaBasic;
+
+public class ArrayConcept {
+
+	public static void main(String[] args) {
+		//Array
+		//lowest bound / index is = 0
+		//upper bound / index is = n-1 (n is size of an array)
+		
+		int i[] =new int[5];
+		
+
+	}
+
+}

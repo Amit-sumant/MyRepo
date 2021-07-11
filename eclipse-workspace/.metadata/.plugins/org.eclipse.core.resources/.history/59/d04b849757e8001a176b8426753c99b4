@@ -1,0 +1,17 @@
+package stepDefination;
+
+import cucumber.api.java.en.Given;
+
+public class LoginStepDefination 
+{
+	@Given("^user is on Login Page$")
+	public void user_is_on_login()
+	{
+		
+	}
+	
+	
+	
+	
+	
+}

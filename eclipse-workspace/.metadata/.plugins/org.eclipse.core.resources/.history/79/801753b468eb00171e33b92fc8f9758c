@@ -1,0 +1,85 @@
+package com.aruba.action;
+
+import java.awt.List;
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+public class ArubaProject {
+	
+	public static void getAllLink() //this code count all links present on screen
+	{
+		java.util.List<WebElement> allLink = DriveArubaFunction.driver.findElements(By.xpath("//a"));
+		int cnt = allLink.size();
+		System.out.println("All total count is =" + cnt);
+	}
+	
+	public static void AurubaRegis()//here click to register link
+	{
+		WebElement regis = DriveArubaFunction.driver.findElement(ArubaLoginObject.regis); 
+		regis.click();
+	}
+	
+	public static void fillRegisdetails(String name1, String name2, String phone, String email1)
+	{
+		WebElement firstnm = DriveArubaFunction.driver.findElement(ArubaLoginObject.firstnm); //1 enter name
+		firstnm.sendKeys(name1); 
+		
+		WebElement lastnm = DriveArubaFunction.driver.findElement(ArubaLoginObject.lastnm);
+		lastnm.sendKeys(name2);
+		
+		WebElement phon = DriveArubaFunction.driver.findElement(ArubaLoginObject.phon);
+		phon.sendKeys(phone);
+		
+		WebElement email = DriveArubaFunction.driver.findElement(ArubaLoginObject.email);
+		email.sendKeys(email1);
+	}
+	
+	public static void mailingInfo(String addvar1, String addvar2, String ctyvar3, String stetvar4, int code, String var6)
+	{
+		//driver.findElement(By.xpath("//select[option[@value='50']]")
+		WebElement add1 = DriveArubaFunction.driver.findElement(ArubaLoginObject.add1);
+		add1.sendKeys(addvar1);
+		
+		WebElement add2 = DriveArubaFunction.driver.findElement(ArubaLoginObject.add2);
+		add2.sendKeys(addvar2);
+		
+		WebElement cty = DriveArubaFunction.driver.findElement(ArubaLoginObject.cty);
+		cty.sendKeys(ctyvar3);
+		
+		WebElement stet = DriveArubaFunction.driver.findElement(ArubaLoginObject.stet);
+		stet.sendKeys(stetvar4);
+		
+		WebElement code1 = DriveArubaFunction.driver.findElement(ArubaLoginObject.code1);
+		code1.sendKeys(String.valueOf(code));
+		
+		WebElement cntry = DriveArubaFunction.driver.findElement(ArubaLoginObject.cntry);
+		cntry.sendKeys(var6);
+		
+		Assert.assertFalse(DriveArubaFunction.driver.getTitle().equals("Google"), "Title not match");
+		System.out.println("");
+	}
+	
+	public static void UserInfo(String user, String pwd1, String pwd2)
+	{
+		WebElement usernm = DriveArubaFunction.driver.findElement(ArubaLoginObject.usernm);
+		usernm.sendKeys(user);
+		
+		WebElement pass = DriveArubaFunction.driver.findElement(ArubaLoginObject.pass);
+		pass.sendKeys(pwd1);
+		
+		WebElement confpass = DriveArubaFunction.driver.findElement(ArubaLoginObject.confpass);
+		confpass.sendKeys(pwd2);
+		
+	}
+	public static void Submit()
+	{
+		WebElement submitbtn = DriveArubaFunction.driver.findElement(ArubaLoginObject.submitbtn);
+		submitbtn.click();
+	}
+}

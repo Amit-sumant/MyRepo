@@ -1,0 +1,20 @@
+package Test;
+import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class MySelenium {
+
+	public static void main(String[] args) {
+
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		System.setProperty("Internet Explorer driver", "C:\\internetdriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		WebDriver idriver = new InternetExplorerDriver();
+		
+		idriver.get("https://www.youtube.com/watch?v=lppYkCYHh-c&t=21s");
+		//driver.get("https://www.youtube.com/watch?v=XQYv31Q-Ogs&t=1942s");
+		idriver.manage().window().maximize();
+	}
+
+}

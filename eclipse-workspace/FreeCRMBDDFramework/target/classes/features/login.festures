@@ -1,0 +1,9 @@
+Feature: Login page of nopCommerce application
+
+Scenario: Successful Login to nopCommerce application
+
+Given user is on Login Page
+When title of Login page is nopcommerce
+Then user enter username and password
+Then user click on Login button
+And user is on home page

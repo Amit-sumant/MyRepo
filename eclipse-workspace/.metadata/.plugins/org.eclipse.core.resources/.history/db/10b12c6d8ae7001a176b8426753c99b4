@@ -1,0 +1,5 @@
+Features: Login page of FreeCRM application
+
+Scenario: Successful login to FreeCRm application
+Given user is on login page
+

@@ -1,0 +1,18 @@
+package javaBasic;
+
+import java.util.Scanner;
+
+public class NormalPracticeCode
+{
+	public static void main(String[] args)
+	{
+		int i;
+		int j;
+		
+		Scanner sc=new Scanner(System.in);
+		.nextInt();
+		
+		System.out.println(i);
+	}
+
+}

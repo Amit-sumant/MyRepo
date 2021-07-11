@@ -1,0 +1,12 @@
+package com.aruba.action;
+
+import java.awt.AWTException;
+
+public class ArubaModule {
+	
+	public void setup()
+	{
+		
+	}
+
+}

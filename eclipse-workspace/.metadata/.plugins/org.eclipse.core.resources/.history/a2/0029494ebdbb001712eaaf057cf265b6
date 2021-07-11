@@ -1,0 +1,53 @@
+package Test;
+import java.awt.Desktop.Action;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.MouseEvent;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.*;
+
+public class MyCricbuzz {
+
+	public static void main(String[] args) {
+		
+	
+		WebDriver mydriver = new ChromeDriver();
+		mydriver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+		mydriver.get("https://www.google.com");
+		mydriver.manage().window().maximize();
+		
+		WebElement element = mydriver.findElement(By.name("q"));
+		element.sendKeys("cricbuzz");
+		element.submit();
+		
+		WebElement new1 = mydriver.findElement(By.linkText("Cricbuzz.com: Cricket Score, Schedule, Latest News, Stats & Videos"));
+		new1.click();
+		
+		//below code is related to find text in entire page
+		
+		String strtxt = mydriver.findElement(By.id("match_menu_container")).getText();
+		System.out.println(strtxt);
+		
+		//String cricPage = mydriver.getPageSource();
+		//String[] newWord = cricPage.split("ENGW 209-all out (42.2 Ovs)");
+		//String[] newWord1 = cricPage.split("AUSW 296/6 (50.0 Ovs)");
+		//System.out.println(newWord.length);
+		//System.out.println(newWord1.length);
+
+	}
+
+}

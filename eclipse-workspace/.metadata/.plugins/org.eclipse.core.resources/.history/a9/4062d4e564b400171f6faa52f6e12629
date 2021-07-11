@@ -1,0 +1,46 @@
+package Test;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.*;
+
+public class MySelenium {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
+		//System.setProperty("webdriver..driver", "C:\\IEDriverServer.exe");
+		WebDriver driver = new ChromeDriver();
+		//WebDriver mriver = new InternetExplorerDriver();
+		//WebDriver mdriver=new FirefoxDriver();
+		
+		//idriver.get("https://www.youtube.com");
+		driver.get("https://www.facebook.com/");
+		driver.manage().window().maximize();
+		
+		//driver.findElement(By.cssSelector("q")).sendKeys("Sachin Tendulkar");
+		//WebElement element = driver.findElement(By.name("q"));
+		WebElement element = driver.findElement(By.name("email"));
+		element.sendKeys("amit.sumant@gmail.com");
+		
+		WebElement element1 = driver.findElement(null);
+		element1.sendKeys(Keys.TAB);
+		
+		WebElement element2 = driver.findElement(By.name("pass"));
+		element2.sendKeys("SriramsamarthAmit712");
+		
+		element.submit();
+			
+			
+}
+}

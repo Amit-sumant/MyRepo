@@ -1,0 +1,15 @@
+package oopsConcept;
+
+public class Car {
+	
+	//below variables are called global variable as declared in Class
+	int a;
+	int b;
+	int c;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

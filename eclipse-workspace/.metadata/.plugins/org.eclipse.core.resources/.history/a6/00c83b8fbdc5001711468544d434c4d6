@@ -1,0 +1,87 @@
+package Test;
+import java.awt.Desktop.Action;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.MouseEvent;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.*;
+
+public class FBLogin {
+
+	public static void main(String[] args) {
+
+		System.setProperty("Webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriver fbdriver = new ChromeDriver();
+		fbdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		fbdriver.get("https://www.facebook.com");
+		fbdriver.manage().window().maximize();
+		
+		/*WebElement new1 = fbdriver.findElement(By.name("q"));
+		new1.sendKeys("Facebook");
+		new1.submit();
+		
+		//WebElement new2 = fbdriver.findElement(By.linkText("Facebook® - Account Sign Up"));
+		//new2.click();
+		
+		WebElement new2 = fbdriver.findElement(By.id("vn1s0p1c0"));
+		new2.click();
+		
+			
+		//now register with facebook
+		
+		WebElement new3 = fbdriver.findElement(By.name("firstname"));
+		new3.sendKeys("Ameeta");
+		
+		WebElement new4 = fbdriver.findElement(By.name("lastname"));
+		new4.sendKeys("Super");
+		
+		WebElement new5 = fbdriver.findElement(By.name("reg_email__"));
+		new5.sendKeys("amits134@gmail.com");
+		
+		WebElement new6 = fbdriver.findElement(By.name("reg_email_confirmation__"));
+		new6.sendKeys("amits134@gmail.com");
+		
+		WebElement new7 = fbdriver.findElement(By.name("reg_passwd__"));
+		new7.sendKeys("SriramsamarthAmit2017");
+		
+		WebElement new8 = fbdriver.findElement(By.name("birthday_day"));
+		new8.sendKeys("8");
+		
+		WebElement new9 = fbdriver.findElement(By.name("birthday_month"));
+		new9.sendKeys("Dec");
+		
+		WebElement new10 = fbdriver.findElement(By.xpath("birthday_year"));
+		new10.sendKeys("1989");
+		
+		//Radio button selected
+		WebElement radiobtn = fbdriver.findElement(By.id("u_0_7"));
+		radiobtn.click();
+					
+		//WebElement myclk = fbdriver.findElement(By.name("websubmit"));
+		//myclk.submit();
+		fbdriver.findElement(By.xpath("//input[@value='u_0_12']")).submit();*/
+		
+		// Using XPath
+		
+		WebElement new1 = fbdriver.findElement(By.xpath("//input[@name='firstname']"));
+		new1.sendKeys("amit");
+		
+		WebElement new2 = fbdriver.findElement(By.xpath("//input[@name='lastname']"));
+		new2.sendKeys("sumant");
+		
+		WebElement btn = fbdriver.findElement(By.xpath("//button"));
+	}
+
+}

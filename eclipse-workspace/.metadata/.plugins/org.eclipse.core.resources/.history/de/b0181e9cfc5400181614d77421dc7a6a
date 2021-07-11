@@ -1,0 +1,17 @@
+package com.ej.slfrm.test;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+public class DriverSeleniumMainProj 
+{
+	public static void HomePage() //click to navigate Home
+	{
+		WebElement home = DriverSeleniumFn.driver.findElement(DriverSeleniumObject.home);
+		home.click();
+	}
+
+}

@@ -1,0 +1,8 @@
+Feature: Login page of FreeCRM application
+
+Scenario: Successful Login to FreeCRm application
+Given user is on Login Page
+When title of Login page is FreeCRm
+Then user enter username and password
+Then user click on Login button
+And user is on home page

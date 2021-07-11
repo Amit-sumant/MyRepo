@@ -1,0 +1,9 @@
+package com.aruba.action;
+
+import org.openqa.selenium.By;
+
+public class ArubaLoginObject {
+	
+	static By regis = By.xpath("//a[contains(text(),'REGISTER')]");
+	
+}

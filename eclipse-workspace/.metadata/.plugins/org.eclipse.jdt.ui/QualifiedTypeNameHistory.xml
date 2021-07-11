@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Test.MyCricbuzz"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="Test.FBLoginObjectRepository"/>
+<fullyQualifiedTypeName name="com.sample.action.DriverFactory"/>
+<fullyQualifiedTypeName name="com.sample.action.AmazonModule"/>
+<fullyQualifiedTypeName name="com.sample.action.AmazonSpeaker"/>
+<fullyQualifiedTypeName name="com.aruba.action.DriveArubaFunction"/>
+<fullyQualifiedTypeName name="com.aruba.action.ArubaLoginObject"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.aruba.action.ArubaProject"/>
+<fullyQualifiedTypeName name="com.ej.slfrm.test.DriverSeleniumMainProj"/>
+<fullyQualifiedTypeName name="com.ej.slfrm.test.DriverSeleniumFn"/>
+<fullyQualifiedTypeName name="com.ej.slfrm.test.DriverSeleniumObject"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.lang.Deprecated"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+<fullyQualifiedTypeName name="testAmgen.SeleniumsetupPage"/>
+<fullyQualifiedTypeName name="testAmgen.AmgenSeleniumObj"/>
+<fullyQualifiedTypeName name="testAmgen.AmgenMainProj"/>
+<fullyQualifiedTypeName name="oopsConcept.StaticNonStatic"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="oopsConcept.Wrapperclass"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="oopsConcept2.BMWCar"/>
+<fullyQualifiedTypeName name="oopsConcept2.Jaguar"/>
+<fullyQualifiedTypeName name="oopsConcept2.Car"/>
+<fullyQualifiedTypeName name="oopsConcept2.Automobile"/>
+<fullyQualifiedTypeName name="oopsConcept2.Vehicle"/>
+<fullyQualifiedTypeName name="interfaceJava.BarclaysBank"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="interfaceJava.AmericanBank"/>
+<fullyQualifiedTypeName name="interfaceJava.IndianBank"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javaBasic.ArrayList"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+</qualifiedTypeNameHistroy>

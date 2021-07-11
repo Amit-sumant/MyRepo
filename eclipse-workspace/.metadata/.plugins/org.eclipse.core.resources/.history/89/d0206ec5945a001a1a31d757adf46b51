@@ -1,0 +1,32 @@
+package javaBasic;
+
+import java.util.Scanner;
+
+public class Numberswipe 
+{
+
+	public static void main(String[] args) 
+	{
+//		int i=100;
+//		int j=200;
+//		
+//		System.out.println("Before swapping of i and j=" +i +" "+ +j);
+//		
+//		int x=i;
+//		
+//		i=j;
+//		j=x;
+//		
+//		System.out.println("After swapping of i and j=" +i +" "+ j);
+		
+		Scanner scn=new Scanner(System.in);
+		
+		System.out.println("enter first number");
+		
+		int i = scn.nextInt();
+		
+		System.out.println("enter second number");
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MySelenium {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\selenium-java-3.6.0.zip");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.youtube.com/watch?v=XQYv31Q-Ogs&t=1942s");
+
+	}
+
+}

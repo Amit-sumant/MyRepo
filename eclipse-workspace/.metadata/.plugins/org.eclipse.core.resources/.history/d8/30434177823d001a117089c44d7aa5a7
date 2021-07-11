@@ -1,0 +1,25 @@
+package oopsConcept;
+
+public class FunctionsJava {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello");
+		FunctionsJava obj=new FunctionsJava();
+		
+		obj.abc()
+
+	}
+	
+	public int abc()
+	{
+		System.out.println("ABC Method output is :");
+		
+		int a=700;
+		int b=800;
+		int c=a+b;
+		
+		return c;
+	}
+
+}

@@ -1,0 +1,13 @@
+package javaBasic;
+
+public class NormalPracticeCode
+{
+	public static void main(String[] args)
+	{
+		int i;
+		int j;
+		
+		System.out.println(i);
+	}
+
+}

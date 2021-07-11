@@ -1,0 +1,27 @@
+package javaBasic;
+
+import java.util.Scanner;
+
+public class NormalPracticeCode
+{
+	public static void main(String[] args)
+	{
+		int i;
+		int j;
+		
+		Scanner sc=new Scanner(System.in);
+		i=sc.nextInt();
+		j=sc.nextInt();
+		
+		if(i<j)
+		{
+			System.out.println("I is lesser than J");
+		}else
+		{
+			System.out.println("J is greater");
+		}
+		
+		System.out.println(i);
+	}
+
+}

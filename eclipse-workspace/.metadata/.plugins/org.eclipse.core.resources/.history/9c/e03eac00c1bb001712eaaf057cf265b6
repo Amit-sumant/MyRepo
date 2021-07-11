@@ -1,0 +1,40 @@
+package Test;
+import java.awt.Desktop.Action;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.MouseEvent;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.*;
+
+public class FBLogin {
+
+	public static void main(String[] args) {
+
+		System.setProperty("Webdriver.chrome.driver", "C:\\\\chromedriver.exe");
+		WebDriver fbdriver = new ChromeDriver();
+		fbdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		fbdriver.get("https://www.google.com");
+		fbdriver.manage().window().maximize();
+		
+		WebElement new1 = fbdriver.findElement(By.name("q"));
+		new1.sendKeys("Facebook");
+		new1.submit();
+		
+		WebElement new2 = fbdriver.findElement(By.linkText("facebook.com - Facebook® - Account Sign Up"));
+		new2.click();
+
+	}
+
+}

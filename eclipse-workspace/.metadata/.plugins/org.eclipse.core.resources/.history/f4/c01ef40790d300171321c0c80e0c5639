@@ -1,0 +1,7 @@
+package com.sample.action;
+
+public class AmazonModule {
+	public void sarchItem(String itemtext) {
+		
+	}
+}

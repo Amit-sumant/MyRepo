@@ -1,0 +1,18 @@
+package com.aruba.action;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class ArubaProject {
+	
+	public static void setup()
+	{
+		DriveArubaFunction.getFunction();
+		DriveArubaFunction.driver.get("http://newtours.demoaut.com/");
+		
+		WebElement regis = DriveArubaFunction.driver.findElement(By.xpath("//a[contains(text(),'REGISTER')]"));
+		regis.click();
+	}
+	
+
+}

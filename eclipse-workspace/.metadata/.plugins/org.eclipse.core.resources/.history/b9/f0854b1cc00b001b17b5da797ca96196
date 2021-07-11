@@ -1,0 +1,24 @@
+package javaBasic;
+
+import java.util.List;
+
+public class MyArrayListProg 
+{
+	List myarray;
+	
+	public List getMyarray() {
+		return myarray;
+	}
+
+	public void setMyarray(List myarray) {
+		this.myarray = myarray;
+	}
+
+	public static void main(String[] args) 
+	{
+		MyArrayListProg myprog=new MyArrayListProg();
+		
+		
+	}
+	
+}

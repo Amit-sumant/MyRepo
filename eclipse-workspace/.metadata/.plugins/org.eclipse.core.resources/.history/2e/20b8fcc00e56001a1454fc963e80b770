@@ -1,0 +1,27 @@
+package collectionOfJava;
+
+import java.util.Hashtable;
+
+public class HashTableConcept 
+{
+
+	public static void main(String[] args) 
+	{
+		//HashTable is similar to HashMap and it is Synchronized.
+		//Store the value in from of Key Val
+		//Key==> Object ==> HashCode ==> Value
+		
+		Hashtable ht=new Hashtable();
+		ht.put(1, "Amit");
+		ht.put(2, "Learning");
+		ht.put(3, "Java Selenium");
+		
+		//Create a Clone copy 
+		Hashtable ht1=new Hashtable();
+		
+		ht1=(Hashtable)ht.clone();
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package javaBasic;
+
+public class ArrayConcept {
+
+	public static void main(String[] args) {
+		//Array
+		//lowest bound / index is = 0
+		//upper bound / index is = n-1 (n is size of an array)
+		
+		//this is how declare an array
+		int i[] =new int[5];
+		
+		i[0] = 10;
+		i[1] = 100;
+		i[2] = 500;
+		i[3] = 77;
+		i[4] = 88;
+		
+		System.out.println("Array of this value is:" + i);
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package oopsConcept;
+
+public class MethodOverloading {
+
+	public static void main(String[] args) {
+
+		MethodOverloading mo=new MethodOverloading();
+		mo.subtract();
+
+	}
+	
+	public void subtract()
+	{
+		System.out.println("This is 0 parameter--");
+	}
+	
+	public void subtract(int i)
+	{
+		System.out.println("This is 1 parameter");
+	}
+	
+	public void subtract(int i, int j)
+	{
+		System.out.println("This is 2 parameter--");
+	}
+
+}

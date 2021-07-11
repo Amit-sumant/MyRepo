@@ -1,0 +1,11 @@
+package com.sample.action;
+
+import org.openqa.selenium.WebElement;
+
+public class AmazonModule {
+	public static void sarchItem(String itemtext) {
+		WebElement srch = DriverFactory.driver.findElement(AmazonLoginobjectRepository.srch);
+		srch.sendKeys(itemtext);
+		srch.submit();
+	}
+}

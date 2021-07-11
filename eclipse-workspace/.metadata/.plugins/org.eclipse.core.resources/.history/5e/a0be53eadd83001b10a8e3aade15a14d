@@ -1,0 +1,18 @@
+package hashMapConcept;
+
+import java.util.HashMap;
+
+public class HashmaptoArrayList {
+
+	public static void main(String[] args) {
+		HashMap<String, String> map=new HashMap<String, String>();
+		
+		map.put("India", "New Delhi");
+		map.put("USA", "Washington");
+		map.put("Germany", "Berlin");
+		map.put("Holland", "Amsterdam");
+		map.put("Switzerland", "Zurich");
+
+	}
+
+}

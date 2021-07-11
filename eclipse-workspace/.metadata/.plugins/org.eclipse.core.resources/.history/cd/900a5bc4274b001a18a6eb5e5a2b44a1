@@ -1,0 +1,16 @@
+package collectionOfJava;
+import java.util.ArrayList;
+
+public class MyArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList ar=new ArrayList();
+		ar.add(10);
+		ar.add(100);
+		System.out.println(ar.size());
+
+		ar.add(500)
+	}
+
+}

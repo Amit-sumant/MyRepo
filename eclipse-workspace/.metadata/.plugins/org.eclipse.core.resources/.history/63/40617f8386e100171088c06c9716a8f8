@@ -1,0 +1,13 @@
+package com.aruba.action;
+
+import org.openqa.selenium.By;
+
+public class ArubaLoginObject {
+	
+	static By regis = By.xpath("//a[contains(text(),'REGISTER')]"); // click on register link
+	
+	static By firstnm = By.xpath("//input[@name='firstName']"); // first name
+	static By lastnm = By.xpath("//input[name= 'lastName']"); // last name
+	static By phon = By.xpath("//input[name= 'phone']"); // Phone
+	static By email = By.xpath("//input[id= 'userName']"); // last name
+}

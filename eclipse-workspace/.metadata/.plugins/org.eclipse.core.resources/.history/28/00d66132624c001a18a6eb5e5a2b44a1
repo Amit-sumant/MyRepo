@@ -1,0 +1,36 @@
+package collectionOfJava;
+import java.util.ArrayList;
+
+public class MyArrayList {
+
+	public static <E> void main(String[] args) 
+	{
+		
+		ArrayList ar=new ArrayList();
+		ar.add(10);
+		ar.add(100);
+		ar.add(500);
+		ar.add("String");
+		
+		//to print all the values from arraylist then use for loop
+		
+		for(int i=0;i<ar.size();i++)
+		{
+			System.out.println(ar.get(i));
+		}
+		
+		//generic and non generic
+		ArrayList<Integer> ar1=new ArrayList<Integer>();
+		ar1.add(100);
+		ar1.add(500);
+		
+		ArrayList<String> ar2=new ArrayList<String>();
+		ar2.add("Selenium is great with Java");
+		
+		ArrayList<E> ar4=new ArrayList<E>();
+		
+		
+		
+	}
+
+}

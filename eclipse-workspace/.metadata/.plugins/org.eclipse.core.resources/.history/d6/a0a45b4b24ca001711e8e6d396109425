@@ -1,0 +1,14 @@
+package com.sample.action;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AmazonLoginobjectRepository {
+	
+	
+	static By act = By.xpath("//span[text()='Hello. Sign in']"); // this is action class and return span text
+	static By act1 = By.xpath(("//span[text()='Sign in']"));
+
+}

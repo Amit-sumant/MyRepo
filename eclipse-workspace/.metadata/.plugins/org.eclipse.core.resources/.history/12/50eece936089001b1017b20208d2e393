@@ -1,0 +1,18 @@
+package javaInterviewCoding;
+
+import java.util.Scanner;
+
+public class PrintInteger {
+
+	public static void main(String[] args) {
+		// enter a string given by user
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter your Integer value");
+		
+		int i = sc.nextInt();
+
+	}
+
+}

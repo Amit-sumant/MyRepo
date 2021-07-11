@@ -1,0 +1,39 @@
+package javaBasic;
+
+public class PrintAlphabet 
+{
+
+	public static void main(String[] args) 
+	{
+		// Printing alphabet pattern like below
+		/*
+		 A
+		 AB
+		 ABC
+		 ABCD
+		 */
+		// 65 means ASCII value of A 
+		int alpha=65;
+		for(int i=0;i<=5;i++)
+		{
+			for(int j=0; j<=i; j++)
+			{
+				System.out.print((char)(alpha + j) + " ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("------------- * Print --------------------");
+		
+		for(int x=0; x<=5; x++)
+		{
+			for(int y=0; y<=x; y++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+
+}

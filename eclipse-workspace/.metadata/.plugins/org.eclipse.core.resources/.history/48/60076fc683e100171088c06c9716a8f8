@@ -1,0 +1,46 @@
+package com.aruba.action;
+
+import java.awt.List;
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+
+public class ArubaProject {
+	
+	public static void getAllLink() //this code count all links present on screen
+	{
+		java.util.List<WebElement> allLink = DriveArubaFunction.driver.findElements(By.xpath("//a"));
+		int cnt = allLink.size();
+		System.out.println("All total count is =" + cnt);
+	}
+	
+	public static void AurubaRegis()//here click to register link
+	{
+		WebElement regis = DriveArubaFunction.driver.findElement(ArubaLoginObject.regis); 
+		regis.click();
+	}
+	
+	public static void fillRegisdetails()
+	{
+		String name1;
+		String name2; 
+		String phone; 
+		String email1;
+		
+		WebElement firstnm = DriveArubaFunction.driver.findElement(ArubaLoginObject.firstnm); //1 enter name
+		firstnm.sendKeys(name1); 
+		
+		WebElement lastnm = DriveArubaFunction.driver.findElement(ArubaLoginObject.lastnm);
+		lastnm.sendKeys(name2);
+		
+		WebElement phon = DriveArubaFunction.driver.findElement(ArubaLoginObject.phon);
+		phon.sendKeys(phone);
+		
+		WebElement email = DriveArubaFunction.driver.findElement(ArubaLoginObject.email);
+		email.sendKeys(email1);
+	}
+}

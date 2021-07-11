@@ -1,0 +1,9 @@
+package com.ej.slfrm.test;
+import org.openqa.selenium.By;
+
+public class DriverSeleniumObject 
+{
+
+	//click on Home once page upload
+	static By home = By.xpath("//a[contains(text(),'HOME')]");
+}

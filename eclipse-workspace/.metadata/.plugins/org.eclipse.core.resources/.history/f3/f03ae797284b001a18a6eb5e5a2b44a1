@@ -1,0 +1,25 @@
+package collectionOfJava;
+import java.util.ArrayList;
+
+public class MyArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList ar=new ArrayList();
+		ar.add(10);
+		ar.add(100);
+		System.out.println(ar.size());
+
+		ar.add(500);
+		System.out.println(ar.size());
+		System.out.println(ar.get(2));
+		
+		//to print all the values from arraylist then use for loop
+		
+		for(int i=0;i<=ar.size();i++)
+		{
+			System.out.println("This is Array Return =" ar.get(i));
+		}
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.sample.action;
+import java.util.List;
+
+import org.apache.xerces.impl.dv.dtd.DTDDVFactoryImpl;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class AmazonSpeaker {
+
+	public static void searchSpeaker(String itemspeaker) //enter text into search text box and enter
+	{
+		WebElement srch = DriverFactory.driver.findElement(AmazonLoginobjectRepository.srch);
+		srch.sendKeys(itemspeaker);
+		srch.submit();
+	}
+	
+	public static void getAllSpeaker() // count total number of links
+	{
+		List<WebElement> allSpeaker = DriverFactory.driver.findElements(By.xpath("//h2"));
+		int cnt = allSpeaker.size();
+		System.out.println("Total count of links are =" + cnt);
+	}
+	
+	public static void clickonLink(int searchNo)
+	{
+		WebElement link1 = DriverFactory.driver.findElements(By.xpath("//a/h2")).get(searchNo-4);
+		link1.click();
+	}
+
+}

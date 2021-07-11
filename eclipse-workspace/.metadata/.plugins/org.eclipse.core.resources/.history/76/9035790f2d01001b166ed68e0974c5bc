@@ -1,0 +1,12 @@
+package javaBasic;
+
+public class NormalPracticeCode
+{
+	public static void main(String[] args)
+	{
+		int i='x';
+		
+		System.out.println(i);
+	}
+
+}

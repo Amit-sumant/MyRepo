@@ -1,0 +1,15 @@
+package javaBasic;
+
+public class HashMapConcept {
+
+	public static void main(String[] args) 
+	{
+		//Hashmap is a class which implement Map interface
+		//extends abstractMap
+		//it contains only unique elements
+		//Hashmap stores the value on basis of - Key - Value pair
+		
+
+	}
+
+}

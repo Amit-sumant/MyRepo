@@ -1,0 +1,67 @@
+package stepDefination;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+import static org.junit.Assert.assertEquals;
+
+public class LoginStepDefination 
+{
+	WebDriver driver;
+	
+	@Given("^user is on Login Page$")
+	public void user_is_on_login()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		driver.get("https://www.freecrm.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	@When("^title of Login page is FreeCRm$")
+	public void title_oflogin_page() 
+	{
+		String title = driver.getTitle();
+		System.out.println(title);
+		assertEquals("Free CRM #1 cloud software for any business large or small", title);
+		
+	}
+	
+	@Then("^user enter username and password$")
+	public void user_enter_username_and_password() throws Throwable {
+	    driver.findElement(By.xpath("//a[contains(text(),'Sign Up')]")).click();
+	    
+	    driver.findElement(By.id("email")).sendKeys("a.sumant@yahoo.com");
+	    driver.findElement(By.id("phone_number")).sendKeys("9881199724");
+	    
+	    WebElement chkbox=driver.findElement(By.xpath("//input[@id='terms']"));
+	    chkbox.click();
+	    
+	    
+	    
+	}
+
+	@Then("^user click on Login button$")
+	public void user_click_on_Login_button() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^user is on home page$")
+	public void user_is_on_home_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	
+}

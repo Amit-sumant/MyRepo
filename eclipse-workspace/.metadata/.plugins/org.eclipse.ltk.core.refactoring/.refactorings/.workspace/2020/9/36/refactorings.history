@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;nopcommerceBDDFramework&apos;" deleteContents="true" description="Delete resource &apos;nopcommerceBDDFramework&apos;" element1="/nopcommerceBDDFramework" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1599298738347"/>
+</session>
