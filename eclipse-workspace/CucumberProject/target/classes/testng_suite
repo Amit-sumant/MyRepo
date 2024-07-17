@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CRM Automation Application Test Suite">
+  <test name="CRM Application Test Cases">
+    <classes>
+      		<class name="com.crm.qa.TestCase.WishListTestCase"/>
+      		
+      		<methods>
+      				
+      				<include name = "addtestcase" />
+      				<exclude name = "add1testcase" />
+      		</methods>
+      		
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

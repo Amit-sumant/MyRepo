@@ -2,6 +2,8 @@ package collectionOfJava;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ArrayListExamaples {
@@ -73,6 +75,32 @@ public class ArrayListExamaples {
 		ArrayList<Object> amit=new ArrayList<Object>(Arrays.asList(100,200,"Arnav",10.33,500));
 		
 		System.out.println(amit);
+		
+		
+		System.out.println("---------------------Remove IF------------------------------");
+		
+		ArrayList<Integer> amit1=new ArrayList<Integer>(Arrays.asList(111,200,300,400,450,500,600,700,800,877,912));
+		
+		amit1.removeIf(num -> num % 2 != 0);
+		System.out.println(amit1);
+		
+		System.out.println("---------------------Remove IF------------------------------");
+		
+		ArrayList<Integer> amitarray=new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+		
+		amitarray.removeIf(num -> num % 2 == 0);
+		System.out.println(amitarray);
+		
+		System.out.println("---------------------Remove IF------------------------------");
+		
+		System.out.println("---------------------Retain------------------------------");
+		
+		ArrayList<Integer> arrlist=new ArrayList<Integer>(Arrays.asList(10,1,2,3,4,10,5,6,7,8,9,10));
+		
+		arrlist.retainAll(Collections.singleton(10));
+		
+		System.out.println(arrlist);
+		
 	}
 
 }

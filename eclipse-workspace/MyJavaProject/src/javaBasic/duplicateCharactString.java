@@ -7,7 +7,7 @@ public class duplicateCharactString
 	{
 		//duplicateCharactString obj=new duplicateCharactString();
 		//obj.myArray();
-		duplicateCharactString.myArray(); //This obj created because below method call as Static
+		//duplicateCharactString.myArray(); //This obj created because below method call as Static
 		
 		String str="Array Duplicate String";
 		int cnt=0;
@@ -30,7 +30,9 @@ public class duplicateCharactString
 			
 			public static void myArray() 
 			{
-				int[] aa = {1,2,2,3,4,4,5,6,7,8,9};	
+				//int[] aa = {1,2,2,3,4,4,5,6,7,8,9};	
+				
+				int aa[]={1,2,2,3,4,4,5,6,7,8,9};	
 				
 				for(int i1=0;i1<aa.length;i1++)
 				{

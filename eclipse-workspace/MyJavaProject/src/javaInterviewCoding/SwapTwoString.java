@@ -27,7 +27,7 @@ public class SwapTwoString {
 		
 		tmp=c+d;
 		
-		System.out.println(tmp);
+		System.out.println("Temp is -> " + tmp);
 		
 		tmp = c;
 		c = d;

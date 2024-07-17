@@ -13,7 +13,7 @@ public class StringOddEvenNumber {
 		while (true)
 		{
 		
-		String str = sc.next();
+		String str = sc.nextLine();
 		if (str.equalsIgnoreCase("STOP"))
 		{
 			break;

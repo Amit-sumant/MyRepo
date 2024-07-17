@@ -19,7 +19,8 @@ public class LoginStepdefination
 	@Given("^user is login page$")
 	public void user_alraedy_on_home_page() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mypc\\eclipse-workspace\\NopcommerceBDDFramework\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\New folder\\MyRepo\\eclipse-workspace\\NopcommerceBDDFramework\\Driver\\chromedriver.exe");
+		
 		driver = new ChromeDriver();
 		
 		driver.get("https://admin-demo.nopcommerce.com");
@@ -42,7 +43,7 @@ public class LoginStepdefination
 		
 	}
 	
-	/*@When("^title of login page is nopcommerce$")
+	@When("^title of login page is nopcommerce$")
 	public void title_of_login_page_is_nopcommerce() throws Throwable {
 	    
 	}
@@ -60,7 +61,7 @@ public class LoginStepdefination
 	@Then("^user is on home page$")
 	public void user_is_on_home_page() throws Throwable {
 	   
-	}*/
+	}
 	
 
 }

@@ -1,4 +1,4 @@
-package com.crm.qa.base;
+ package com.crm.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,21 +8,26 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.crm.qa.utility.TestUtil;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase 
 {
-	static WebDriver driver;
-	static Properties prop;
+	public static WebDriver driver;
+	public static Properties prop;
 	
-	public TestBase() throws IOException
+	public TestBase()
 	{
 		//how to read properties
+		//Using property class read all config file
 		try
 		{
 			prop = new Properties();
-			FileInputStream fis=new FileInputStream("C:/Users/mypc/eclipse-workspace/CucumberProject/src/main/java/com/crm/qa/config/config.properties");
+			FileInputStream fis=new FileInputStream("E:\\New folder\\MyRepo\\eclipse-workspace\\CucumberProject\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 			prop.load(fis);
 		}
 		catch(FileNotFoundException e)
@@ -33,6 +38,7 @@ public class TestBase
 		{
 			I.printStackTrace();
 		}
+
 	}
 	
 	public static void initialization()
@@ -41,13 +47,20 @@ public class TestBase
 		
 		if(browsername.equals("chrome"))
 		{
-			System.setProperty("Webdriver.chrome.driver", "C:\\chromedriver.exe");
-			driver = new ChromeDriver();
+			/*
+			 * System.setProperty("webdriver.chrome.driver",
+			 * "C:\\Users\\DELL\\Documents\\Chrome 93\\chromedriver.exe"); driver = new
+			 * ChromeDriver();
+			 */
+			
+			driver = WebDriverManager.chromedriver().create();
+			
 		}
 		else if(browsername.equals("Internet Explorer"))
 		{
-			System.setProperty("Webdriver.chrome.driver", "C:\\IEDriverServer.exe");
-			driver = new ChromeDriver();
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			//driver = WebDriverManager.edgedriver().setup();
 		}
 		
 		driver.manage().window().maximize();
@@ -56,6 +69,20 @@ public class TestBase
 		driver.manage().timeouts().implicitlyWait(TestUtil.Page_Load_IMPLICIT, TimeUnit.SECONDS); // this Page Implicit timeout call from TestUtil class.
 		
 		driver.get(prop.getProperty("url"));
+		
+	}
+	
+	//Authentication Popup Code
+	public static void AuthPopup()
+	{
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Documents\\Chrome 103\\chromedriver_win32\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		
+		String username = "amits@gmail.com";
+		String password = "MA@2006";
+		
+		driver.get("http://" + username + ":" + password + "@" + "the-internet.herokuapp.com/basic_auth");
 	}
 
 }

@@ -23,20 +23,20 @@ public class HashMapConcept {
 		hmp.put(6, "Ford");
 		hmp.put(7, "Skoda");
 		hmp.put(8, null);
-		hmp.remove(8);
-		
+				
 		System.out.println(hmp.get(6));
 		System.out.println(hmp.get(null));
 		System.out.println(hmp.get(5));
 		
 		Iterator<Object> it=hmp.keySet().iterator();
+		
 		while(it.hasNext())
 		{
 			int key =  (int) it.next();
 			String value=(String) hmp.get(key);
-			System.out.println("Key =>" + key + "Value =>" + value);
+			System.out.println("Key => " + key + "Value => " + value);
 		}
-		System.out.println("------------------------------------------------");
+		System.out.println("----------------entrySet-------------------------------");
 		//Hashmap using entry Key i.e. key and value (Very imp question)
 		//Iterator over the set (pair) by using entrySet
 		Iterator<Entry<Object, Object>> itr=hmp.entrySet().iterator();
@@ -48,7 +48,7 @@ public class HashMapConcept {
 		}
 		
 		System.out.println("------------------Lambada function------------------------------");
-		hmp.forEach((k,v) -> System.out.println("Key =" + k + " " + "Value =" + v));
+		hmp.forEach((k,v) -> System.out.println("Key = " + k + " " + "Value = " + v));
 
 	}
 

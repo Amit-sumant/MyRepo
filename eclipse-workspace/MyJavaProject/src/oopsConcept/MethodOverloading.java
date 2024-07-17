@@ -7,7 +7,7 @@ public class MethodOverloading {
 		MethodOverloading mo=new MethodOverloading();
 		mo.subtract();
 		mo.subtract(50);
-		mo.subtract(100, 874);
+		mo.subtract(100, 933);
 	}
 	
 	public void subtract()

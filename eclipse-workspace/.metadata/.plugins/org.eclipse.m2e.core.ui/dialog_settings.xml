@@ -32,7 +32,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item value="All Catalogs" key="catalog"/>
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -44,12 +44,14 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="TestNG_Practitioner_Project"/>
 			<item value="SeleniumFramework"/>
 			<item value="Amazon"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="TestNG_Practitioner_Project"/>
 			<item value="SeleniumFramework"/>
 			<item value="Amazon"/>
 		</list>
@@ -59,6 +61,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\New folder\MyRepo\eclipse-workspace\CucumberProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -71,13 +74,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="CucumberProject.CucumberProject"/>
 		</list>
 		<list key="groupId">
-			<item value="CucumberProject"/>
 		</list>
 		<list key="artifactId">
-			<item value="CucumberProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
