@@ -20,6 +20,7 @@ public class LoginPage
 	public String getLoginPageTitle()
 	{
 		return driver.getTitle();
+		//31 st July
 	}
 	
 	public void forgotPasswordPresent()
