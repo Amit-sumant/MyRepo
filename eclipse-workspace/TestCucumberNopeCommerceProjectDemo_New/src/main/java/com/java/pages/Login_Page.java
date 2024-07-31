@@ -14,6 +14,7 @@ public class Login_Page
 	private By forgotPwd = By.linkText("Forgot password?");
 	private By loginmainpage = By.linkText("Log in"); //this link on initial page
 	private By welcomestore = By.xpath("//div[normalize-space()='Welcome to our store']");
+	//private By nopcommercepage = By.xpath("//img[@alt='nopCommerce demo store']");
 	
 	//constructor
 	public Login_Page(WebDriver driver)
@@ -57,9 +58,9 @@ public class Login_Page
 		driver.findElement(logIn).click();
 	}
 	
-	public void userOnDempPage()
+	public void userOnDemoPage()
 	{
 		String demoWelcome = driver.findElement(welcomestore).getText();
-		System.out.println("Welcome to Demp Page - " + demoWelcome);
+		System.out.println("Welcome to Demo Page - " + demoWelcome);
 	}
 }

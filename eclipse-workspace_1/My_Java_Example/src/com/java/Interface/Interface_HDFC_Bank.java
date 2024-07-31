@@ -1,6 +1,6 @@
 package com.java.Interface;
 
-public interface Interface_HDFC_Bank 
+public interface Interface_HDFC_Bank
 {
 	int minbal = 100; // variable by default it is static
 	

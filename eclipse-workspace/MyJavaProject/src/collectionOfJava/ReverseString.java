@@ -60,6 +60,22 @@ public class ReverseString {
 			System.out.println(s1[j]);
 		}
 		
+		System.out.println("**********************");
+		int a[] =new int[5];
+		a[0]=10; // 11 
+		a[1]=20; // 22
+		a[2]=30; //33
+		a[3]=40;//44
+		a[4]=50;
+		
+		int cnt=0;
+		int len1 = a.length;
+		
+		for(int i=1;i<=len1;i++)
+		{
+			System.out.println(a[i-1]+i);
+		}	
+		
 	}
 
 }

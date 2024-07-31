@@ -40,14 +40,12 @@
     <fullyQualifiedTypeName name="com.java.AbstractMethod.abstractMethod"/>
     <fullyQualifiedTypeName name="com.java.AbstractMethod.HDFCBank"/>
     <fullyQualifiedTypeName name="com.java.AbstractMethod.My_Car"/>
-    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.apache.poi.ss.util.SSCellRange"/>
     <fullyQualifiedTypeName name="com.java.coding_5_June_2024.Display_Uppercase"/>
     <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
 </qualifiedTypeNameHistroy>

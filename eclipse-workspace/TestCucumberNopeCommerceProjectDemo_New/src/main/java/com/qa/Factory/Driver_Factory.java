@@ -13,7 +13,7 @@ public class Driver_Factory
 	
 	public static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<WebDriver>();
 	
-	/**
+	/** to use //if exec want to parallel mode so use threadlocal
 	 * This method is used to initialize 
 	 * @param browser
 	 * @return
@@ -54,7 +54,7 @@ public class Driver_Factory
 	 * This is used to get the driver with ThreadLocal
 	 * @return
 	 */
-	public static synchronized WebDriver getDriver()
+	public static synchronized WebDriver getDriver() //this return webdriver instance
 	{
 		return threadDriver.get();
 	}

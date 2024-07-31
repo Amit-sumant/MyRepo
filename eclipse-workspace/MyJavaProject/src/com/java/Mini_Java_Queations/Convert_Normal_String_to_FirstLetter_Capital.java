@@ -24,7 +24,7 @@ public class Convert_Normal_String_to_FirstLetter_Capital {
 			result = result + firstLetter + remainingLetter + " ";
 		}
 		
-		amit: //java 
+		//amit: //java 
 		System.out.println(result.trim());
 
 	}

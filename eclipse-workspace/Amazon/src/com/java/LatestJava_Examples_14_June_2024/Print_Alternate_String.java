@@ -15,15 +15,26 @@ public class Print_Alternate_String {
 	public static void printAlternate()
 	{
 		String str="This is Java";
+		
+		String s[] = str.split(" ");
+		
+				
+		for(int i=0;i<s.length;i++)
+		{
+			alternateChar(s[i]);
+		}
+		
+		System.out.println();
+	}
+	public static void alternateChar(String str)
+	{
 		int len = str.length();
-		System.out.println(len);
 		
 		for(int i=0;i<len;i=i+2)
 		{
 			System.out.print(str.charAt(i));
 		}
-		
-		System.out.println();
+		System.out.print(" ");
 	}
 	
 	public static void printAlternateString()

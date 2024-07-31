@@ -1,11 +1,14 @@
 package com.java.Interface;
 
-public interface Interface_RBI 
+public interface Interface_RBI
 {
 	public void debit();
 	
 	public void credit();
 	
-	public void transferMonery();
+	default public void transferMonery()
+	{
+		
+	}
 
 }

@@ -6,23 +6,13 @@ public class Second_Max_Array_Element {
 
 	public static void main(String[] args) 
 	{
-		int arr[] = {21,22,26,27,15,18};
-		int max=0; int max1=0; int temp;
+			int arr[] = {21,22,100,27,28,15,18,99,555};
+			int max=arr[0]; int max1=0; int temp;
 		
-		int arlen = arr.length;
-		
-		for(int i=0;i<arlen;i++)
+				
+		for(int i=0;i<arr.length;i++)
 		{
-			if(max<arr[i])
-			{
-				max1 = max;
-				max=arr[i];
-			}
-		}
-		
-		for(int i=0;i<arlen;i++)
-		{
-			for(int j=i+1;j<arlen;j++)
+			for(int j=i+1;j<arr.length;j++)
 			{
 				if(arr[i]>arr[j])
 				{
@@ -32,10 +22,12 @@ public class Second_Max_Array_Element {
 				}
 			}
 		}
-		System.out.println(max1);
+		
+		System.out.println("Second Largest - " + arr[arr.length-2]);
 		
 		System.out.println("-----------This is Using Another Method-----------");
-		secondMax();
+		
+		//secondMax();
 		
 	}
 	

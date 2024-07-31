@@ -1,5 +1,18 @@
 package myTestRunner;
 
-public class Test_Runner {
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions (
+		features = {"src/test/resource/AppFeatures"},
+		glue = {"stepDefination","applicationHooks"},
+		plugin = {"pretty"}
+		
+		)
+public class Test_Runner
+{
 
 }

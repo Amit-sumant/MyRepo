@@ -1,18 +1,11 @@
 package com.java.Java_Sample_1;
 
-public class Reverser_String {
+public class Reverse_String_using_While {
 
 	public static void main(String[] args) 
 	{
 		String str = "Hello";
 		String rev="";
-		
-		/*int len = str.length();
-		
-		for(int i=len-1;i>=0;i--)
-		{
-			rev = rev + str.charAt(i);
-		}*/
 		
 		int len = str.length();
 		int index = len-1;

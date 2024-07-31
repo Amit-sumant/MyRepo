@@ -32,6 +32,7 @@ public class Second_Max_Number
 	public static void findSecondMax()
 	{
 		int a[] = {50,10,20,60,90,100,200,160,70,200};
+		int max=a[0];
 		
 		int len = a.length;
 		

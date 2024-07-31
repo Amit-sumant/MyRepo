@@ -1,4 +1,4 @@
-package com.qa.ApplicationHooks;
+package applicationHooks;
 
 import java.io.FileNotFoundException;
 import java.util.Properties;
@@ -50,7 +50,7 @@ public class Application_Hooks
 		if(sc.isFailed())
 		{
 			String screenshotname = sc.getName().replaceAll(" ", "_");
-			byte [] src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			byte [] src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES); // why BYTES - coz if tomorow show in henkins then it won't take as File
 			sc.attach(src, "img/png", screenshotname);
 		}
 	}

@@ -22,7 +22,29 @@ public class Find_Intersection_of_an_Array {
 				System.out.println("Your Intersection Array is - " + arr1[i]);
 			}
 		}
+		
+		stringInsertion();
 
+	}
+	
+	public static void stringInsertion()
+	{
+		String str1[] = {"Arnav","Tanush","Anvi","Srinika"};
+		String str2[] = {"Sharvil","Aryana","Tanaya","Tanush","Arnav"};
+		
+		ArrayList<String> strList=new ArrayList<>();
+		
+		for(int i=0;i<str1.length;i++)
+		{
+			strList.add(str1[i]);
+		}
+		for(int i=0;i<str2.length;i++)
+		{
+			if(strList.contains(str2[i]))
+			{
+				System.out.println("Your String - " + str2[i].toString());
+			}
+		}
 	}
 
 }

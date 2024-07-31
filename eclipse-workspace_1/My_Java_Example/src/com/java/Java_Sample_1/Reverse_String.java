@@ -1,5 +1,7 @@
 package com.java.Java_Sample_1;
 
+import java.util.LinkedHashMap;
+
 public class Reverse_String 
 {
 
@@ -16,7 +18,28 @@ public class Reverse_String
 		}
 		
 		System.out.println(rev);
-
+		
+		
+		String strr[] = {"A","B","C","C","A","A","D","E"};
+		int val;
+	      
+	      int len1 = strr.length;
+	      
+	      LinkedHashMap<String,Integer> map=new LinkedHashMap<String,Integer>();
+	      
+	      for(int i=0;i<len1;i++)
+	      {
+	    	  if(map.get(strr[i])!=(null))
+	    	  {
+	    		 val = map.get(strr[i]);
+	    		 map.put(strr[i], val + 1);
+	    	  }
+	    	  else
+	    	  {
+	    		  map.put(strr[i], 1);
+	    	  }
+	      }
+	      System.out.println(map.toString() + " ");
 	}
 
 }

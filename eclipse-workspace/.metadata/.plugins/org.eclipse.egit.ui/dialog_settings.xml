@@ -5,4 +5,17 @@
 		<item value="github.com"/>
 		<item value="bitbucket.org"/>
 	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="DELL &lt;ameet.s2012@gmail&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="DELL &lt;ameet.s2012@gmail&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
 </section>
